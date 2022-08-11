@@ -15,7 +15,7 @@ public class ServerInitializer extends Application {
     public void start(Stage primaryStage) throws IOException {
         primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("ui/ServerForm.fxml"))));
         primaryStage.setResizable(false);
-        primaryStage.setTitle("Group Chat ❤️ ");
+        primaryStage.setTitle("Group Chat");
         primaryStage.show();
     }
 }

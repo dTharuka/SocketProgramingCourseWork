@@ -4,20 +4,50 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="575.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFormController">
    <children>
-      <TextArea layoutX="7.0" layoutY="98.0" prefHeight="379.0" prefWidth="482.0" />
-      <TextField layoutX="32.0" layoutY="504.0" prefHeight="42.0" prefWidth="326.0" />
-      <Button layoutX="409.0" layoutY="504.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="65.0" text="SEND" />
+      <TextArea fx:id="textArea" layoutX="7.0" layoutY="98.0" prefHeight="379.0" prefWidth="482.0" />
+      <TextField fx:id="textMessage" layoutX="50.0" layoutY="504.0" prefHeight="42.0" prefWidth="326.0" />
+      <Button layoutX="428.0" layoutY="504.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="42.0" prefWidth="65.0" text="SEND" textFill="#222121" />
       <Label layoutY="23.0" prefHeight="62.0" prefWidth="495.0" style="-fx-background-color: #0aea4e;" />
       <Label layoutX="146.0" layoutY="23.0" prefHeight="62.0" prefWidth="204.0" text="Client-01" textFill="#f80505">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
+      <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="5.0" layoutY="502.0" onMouseClicked="#emoSendOnAction" opacity="0.21" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="53.0" layoutX="376.0" layoutY="504.0" onMouseClicked="#imageSendOnAction" opacity="0.34" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/9-95119_camera-icon-classic-green-camera-icon-png.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="395.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-image: #e0d9d9;">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="15.0" layoutY="11.0" onMouseClicked="#l1emoOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/smile.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="69.0" layoutY="11.0" onMouseClicked="#l2emoOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/emoji.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="124.0" layoutY="11.0" onMouseClicked="#l3emoOnAction" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/happy.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
