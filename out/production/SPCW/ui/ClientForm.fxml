@@ -9,13 +9,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="575.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFormController">
+<AnchorPane prefHeight="575.0" prefWidth="495.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFormController">
    <children>
-      <TextArea fx:id="textArea" layoutX="7.0" layoutY="98.0" prefHeight="379.0" prefWidth="482.0" />
-      <TextField fx:id="textMessage" layoutX="50.0" layoutY="504.0" onMouseClicked="#textMessage" prefHeight="42.0" prefWidth="326.0" />
-      <Button layoutX="428.0" layoutY="504.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="42.0" prefWidth="65.0" text="SEND" textFill="#060606" />
-      <Label layoutY="23.0" prefHeight="62.0" prefWidth="495.0" style="-fx-background-color: #0aea4e;" />
-      <Label layoutX="146.0" layoutY="23.0" prefHeight="62.0" prefWidth="204.0" text="Client-01" textFill="#f80505">
+      <ImageView fitHeight="379.0" fitWidth="482.0" layoutX="7.0" layoutY="98.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/e153a8e9-c851-4467-ab33-3a80eb999ef9.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textArea" layoutX="7.0" layoutY="98.0" opacity="0.64" prefHeight="379.0" prefWidth="482.0" style="-fx-background-color: #ffffff; -fx-border-color: #00d4ff; -fx-border-radius: 5; -fx-background-radius: 15;" />
+      <TextField fx:id="textMessage" layoutX="50.0" layoutY="504.0" onMouseClicked="#textMessage" prefHeight="42.0" prefWidth="326.0" style="-fx-background-radius: 10; -fx-border-color: #00d4ff; -fx-border-radius: 10;" />
+      <Button layoutX="428.0" layoutY="504.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="42.0" prefWidth="65.0" style="-fx-background-radius: 10; -fx-background-color: #00d4ff;" text="SEND" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Label layoutY="23.0" prefHeight="62.0" prefWidth="495.0" style="-fx-background-color: #00d4ff;" />
+      <Label layoutX="146.0" layoutY="23.0" prefHeight="62.0" prefWidth="204.0" text="Client-01" textFill="WHITE">
          <font>
             <Font name="System Bold" size="40.0" />
          </font>
@@ -30,7 +38,7 @@
             <Image url="@../assets/9-95119_camera-icon-classic-green-camera-icon-png.png" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="395.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ccc5c5;">
+      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="395.0" opacity="0.8" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #00d4ff; -fx-background-radius: 10;">
          <children>
             <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="15.0" layoutY="11.0" onMouseClicked="#l1emoOnAction" pickOnBounds="true">
                <image>
@@ -49,5 +57,10 @@
             </ImageView>
          </children>
       </AnchorPane>
+      <Label fx:id="lblMessage" layoutX="60.0" layoutY="507.0" opacity="0.5" prefHeight="35.0" prefWidth="83.0" text="Message" textFill="#00d4ff">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

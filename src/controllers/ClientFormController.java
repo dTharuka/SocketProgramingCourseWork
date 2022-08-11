@@ -2,6 +2,7 @@ package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -20,6 +21,7 @@ public class ClientFormController {
     static String emo3 = "";
     final int PORT = 5000;
     public AnchorPane emojiPane;
+    public Label lblMessage;
     Socket accept;
     DataInputStream dataInputStream;
     DataOutputStream dataOutputStream;
@@ -70,10 +72,13 @@ public class ClientFormController {
                 textMessage.getText().trim() + emo1 + emo2 + emo3);
         dataOutputStream.flush();
         textMessage.clear();
+        lblMessage.setVisible(true);
+        emojiPane.setVisible(false);
     }
 
     public void emoSendOnAction(MouseEvent mouseEvent) {
         emojiPane.setVisible(true);
+        lblMessage.setVisible(false);
     }
 
     public void imageSendOnAction(MouseEvent mouseEvent) {
@@ -84,6 +89,7 @@ public class ClientFormController {
 
     public void textMessage(MouseEvent mouseEvent) {
         emojiPane.setVisible(false);
+        lblMessage.setVisible(false);
     }
 
     public void l1emoOnAction(MouseEvent mouseEvent) {

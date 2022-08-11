@@ -1,6 +1,7 @@
 package controllers;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -21,6 +22,7 @@ public class ClientFormController2 {
     public TextArea textArea2;
     public TextField textMessage2;
     public AnchorPane emojiPane;
+    public Label lblC2Message;
     Socket socket2;
     DataInputStream dataInputStream2;
     DataOutputStream dataOutputStream2;
@@ -62,10 +64,13 @@ public class ClientFormController2 {
         dataOutputStream2.writeUTF(textMessage2.getText().trim()+ emo1 + emo2 + emo3);
         dataOutputStream2.flush();
         textMessage2.clear();
+        lblC2Message.setVisible(true);
+        emojiPane.setVisible(false);
     }
 
     public void emoSendOnAction(MouseEvent mouseEvent) {
         emojiPane.setVisible(true);
+        lblC2Message.setVisible(false);
     }
 
     public void imageSendOnAction(MouseEvent mouseEvent) {
@@ -92,5 +97,6 @@ public class ClientFormController2 {
 
     public void textMessage(MouseEvent mouseEvent) {
         emojiPane.setVisible(false);
+        lblC2Message.setVisible(false);
     }
 }

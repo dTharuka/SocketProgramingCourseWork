@@ -34,28 +34,33 @@
             <Image url="@../assets/9-95119_camera-icon-classic-green-camera-icon-png.png" />
          </image>
       </ImageView>
-      <Button layoutX="424.0" layoutY="498.0" mnemonicParsing="false" onAction="#sendOnAction2" prefHeight="42.0" prefWidth="65.0" style="-fx-background-color: #00d4ff;" text="SEND" textFill="WHITE">
+      <Button layoutX="424.0" layoutY="498.0" mnemonicParsing="false" onAction="#sendOnAction2" prefHeight="42.0" prefWidth="65.0" style="-fx-background-color: #00d4ff; -fx-background-radius: 10;" text="SEND" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="389.0" opacity="0.8" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #00d4ff;">
+      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="389.0" opacity="0.8" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #00d4ff; -fx-background-radius: 10;">
          <children>
-            <ImageView fitHeight="50.0" fitWidth="48.0" layoutY="12.0" onMouseClicked="#l1emoOnAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="7.0" layoutY="12.0" onMouseClicked="#l1emoOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/smile.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="66.0" layoutY="12.0" onMouseClicked="#l2emoOnAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="130.0" layoutY="12.0" onMouseClicked="#l3emoOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/happy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="69.0" layoutY="12.0" onMouseClicked="#l2emoOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../assets/emoji.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="149.0" layoutY="402.0" onMouseClicked="#l3emoOnAction" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/happy.png" />
-         </image>
-      </ImageView>
+      <Label fx:id="lblC2Message" layoutX="62.0" layoutY="498.0" opacity="0.5" prefHeight="42.0" prefWidth="82.0" text="Message" textFill="#00d4ff">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
