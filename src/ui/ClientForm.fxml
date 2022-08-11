@@ -13,7 +13,7 @@
    <children>
       <TextArea fx:id="textArea" layoutX="7.0" layoutY="98.0" prefHeight="379.0" prefWidth="482.0" />
       <TextField fx:id="textMessage" layoutX="50.0" layoutY="504.0" prefHeight="42.0" prefWidth="326.0" />
-      <Button layoutX="428.0" layoutY="504.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="42.0" prefWidth="65.0" text="SEND" textFill="#222121" />
+      <Button layoutX="428.0" layoutY="504.0" mnemonicParsing="false" onAction="#sendOnAction" prefHeight="42.0" prefWidth="65.0" text="SEND" textFill="#060606" />
       <Label layoutY="23.0" prefHeight="62.0" prefWidth="495.0" style="-fx-background-color: #0aea4e;" />
       <Label layoutX="146.0" layoutY="23.0" prefHeight="62.0" prefWidth="204.0" text="Client-01" textFill="#f80505">
          <font>
@@ -30,7 +30,7 @@
             <Image url="@../assets/9-95119_camera-icon-classic-green-camera-icon-png.png" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="395.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-image: #e0d9d9;">
+      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="395.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ccc5c5;">
          <children>
             <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="15.0" layoutY="11.0" onMouseClicked="#l1emoOnAction" pickOnBounds="true">
                <image>
