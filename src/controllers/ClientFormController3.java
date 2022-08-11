@@ -83,6 +83,6 @@ public class ClientFormController3 {
     }
 
     public void textMessage3(MouseEvent mouseEvent) {
-        emojiPane.setVisible(true);
+        emojiPane.setVisible(false);
     }
 }
