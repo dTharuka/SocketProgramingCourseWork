@@ -61,6 +61,7 @@ public class ClientFormController2 {
     public void sendOnAction2(ActionEvent actionEvent) throws IOException {
         dataOutputStream2.writeUTF(textMessage2.getText().trim()+ emo1 + emo2 + emo3);
         dataOutputStream2.flush();
+        textMessage2.clear();
     }
 
     public void emoSendOnAction(MouseEvent mouseEvent) {
@@ -74,15 +75,19 @@ public class ClientFormController2 {
     }
 
     public void l1emoOnAction(MouseEvent mouseEvent) {
-        emo1 = "\uD83D\uDE42";
+
+//        emo1 = "\uD83D\uDE42";
+        textMessage2.setText(textMessage2.getText()+"\uD83D\uDE42");
     }
 
     public void l2emoOnAction(MouseEvent mouseEvent) {
-        emo2 = "\uD83D\uDE0D";
+//        emo2 = "\uD83D\uDE0D";
+        textMessage2.setText(textMessage2.getText()+"\uD83D\uDE0D");
     }
 
     public void l3emoOnAction(MouseEvent mouseEvent) {
-        emo3 = "\uD83E\uDD2A";
+//        emo3 = "\uD83E\uDD2A";
+        textMessage2.setText(textMessage2.getText()+"\uD83E\uDD2A");
     }
 
     public void textMessage(MouseEvent mouseEvent) {

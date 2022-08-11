@@ -157,5 +157,6 @@ public class ServerFormController {
         dataOutputStream2.flush();
         dataOutputStream3.writeUTF("Server : " + textMessage.getText().trim());
         dataOutputStream3.flush();
+        textMessage.clear();
     }
 }

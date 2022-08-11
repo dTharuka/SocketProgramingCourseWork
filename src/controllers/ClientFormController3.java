@@ -58,10 +58,11 @@ public class ClientFormController3 {
     public void sendOnAction3(ActionEvent actionEvent) throws IOException {
         dataOutputStream3.writeUTF(textMessage3.getText().trim() + emo1 + emo2 + emo3);
         dataOutputStream3.flush();
+        textMessage3.clear();
     }
 
     public void emoSendOnAction(MouseEvent mouseEvent) {
-
+        emojiPane.setVisible(true);
     }
 
     public void imageSendOnAction(MouseEvent mouseEvent) {
@@ -71,15 +72,18 @@ public class ClientFormController3 {
     }
 
     public void l1emoOnAction(MouseEvent mouseEvent) {
-        emo1 = "\uD83D\uDE42";
+//        emo1 = "\uD83D\uDE42";
+        textMessage3.setText(textMessage3.getText()+"\uD83D\uDE42");
     }
 
     public void l2emoOnAction(MouseEvent mouseEvent) {
-        emo2 = "\uD83D\uDE0D";
+//        emo2 = "\uD83D\uDE0D";
+        textMessage3.setText(textMessage3.getText()+"\uD83D\uDE0D");
     }
 
     public void l3emoOnAction(MouseEvent mouseEvent) {
-        emo3 = "\uD83E\uDD2A";
+//        emo3 = "\uD83E\uDD2A";
+        textMessage3.setText(textMessage3.getText()+"\uD83E\uDD2A");
     }
 
     public void textMessage3(MouseEvent mouseEvent) {
