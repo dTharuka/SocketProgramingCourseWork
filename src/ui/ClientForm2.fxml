@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="575.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFormController2">
    <children>
       <TextArea fx:id="textArea2" layoutX="7.0" layoutY="98.0" prefHeight="379.0" prefWidth="482.0" />
@@ -19,7 +18,7 @@
             <Font name="System Bold" size="40.0" />
          </font>
       </Label>
-      <TextField fx:id="textMessage2" layoutX="53.0" layoutY="498.0" prefHeight="42.0" prefWidth="326.0" />
+      <TextField fx:id="textMessage2" layoutX="53.0" layoutY="498.0" onMouseClicked="#textMessage" prefHeight="42.0" prefWidth="326.0" />
       <ImageView fitHeight="50.0" fitWidth="48.0" layoutX="2.0" layoutY="494.0" onMouseClicked="#emoSendOnAction" opacity="0.21" pickOnBounds="true">
          <image>
             <Image url="@../assets/images.png" />
