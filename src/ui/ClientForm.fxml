@@ -38,7 +38,7 @@
             <Image url="@../assets/9-95119_camera-icon-classic-green-camera-icon-png.png" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="395.0" opacity="0.8" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #00d4ff;">
+      <AnchorPane fx:id="emojiPane" layoutX="14.0" layoutY="395.0" opacity="0.8" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #00d4ff; -fx-background-radius: 10;">
          <children>
             <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="15.0" layoutY="11.0" onMouseClicked="#l1emoOnAction" pickOnBounds="true">
                <image>
