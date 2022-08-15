@@ -106,6 +106,6 @@ public class ClientFormController {
 
     public void l3emoOnAction(MouseEvent mouseEvent) {
 //        emo3 = "\uD83E\uDD2A";
-        textMessage.setText(textMessage.getText()+"\uD83E\uDD2A");
+        textMessage.setText(textMessage.getText()+"\uD83D\uDE00");
     }
 }

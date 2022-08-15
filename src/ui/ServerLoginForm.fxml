@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="364.0" prefWidth="385.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ServerLoginFormController">
+   <children>
+      <ImageView fitHeight="370.0" fitWidth="392.0" layoutX="-2.0" layoutY="-1.0" opacity="0.8" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/1000_F_493052238_lPSRwxnw5W1WEUdmOheea7fu73CxooGm.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="26.0" layoutY="260.0" prefHeight="31.0" prefWidth="334.0" promptText="User Name" />
+      <PasswordField layoutX="26.0" layoutY="313.0" prefHeight="31.0" prefWidth="334.0" promptText="Password" />
+      <Label layoutY="-6.0" prefHeight="78.0" prefWidth="390.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="72.0" layoutY="-6.0" prefHeight="78.0" prefWidth="239.0" text="Server Login">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutY="192.0" prefHeight="177.0" prefWidth="21.0" style="-fx-background-color: #ffffff;" />
+   </children>
+</AnchorPane>
