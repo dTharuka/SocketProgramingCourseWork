@@ -71,9 +71,24 @@
                </image>
             </ImageView>
             <Label layoutY="336.0" prefHeight="240.0" prefWidth="35.0" style="-fx-background-color: #ffffff;" />
-            <TextField fx:id="txtC3UN" layoutX="34.0" layoutY="397.0" prefHeight="31.0" prefWidth="429.0" promptText="User Name" />
-            <PasswordField fx:id="txtC3PW" layoutX="34.0" layoutY="456.0" prefHeight="31.0" prefWidth="429.0" promptText="Password" />
-            <Button layoutX="343.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnC3LoginOnAction" prefHeight="42.0" prefWidth="120.0" text="Login" />
+            <TextField fx:id="txtC3UN" layoutX="34.0" layoutY="397.0" prefHeight="31.0" prefWidth="429.0" promptText="User Name" style="-fx-border-color: #00d4ff; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <PasswordField fx:id="txtC3PW" layoutX="34.0" layoutY="456.0" prefHeight="31.0" prefWidth="429.0" promptText="Password" style="-fx-border-color: #00d4ff; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></PasswordField>
+            <Button layoutX="343.0" layoutY="508.0" mnemonicParsing="false" onAction="#btnC3LoginOnAction" prefHeight="42.0" prefWidth="120.0" style="-fx-border-color: #00d4ff; -fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #00d4ff;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Label prefHeight="61.0" prefWidth="497.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="159.0" layoutY="2.0" prefHeight="58.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Client-03" textFill="#00d4ff">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

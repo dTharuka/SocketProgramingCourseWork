@@ -57,6 +57,12 @@
                </font>
             </Button>
             <Label layoutY="334.0" prefHeight="246.0" prefWidth="35.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutY="-3.0" prefHeight="62.0" prefWidth="495.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="180.0" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" text="Server" textFill="#00d4ff">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

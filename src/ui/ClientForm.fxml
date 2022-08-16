@@ -86,6 +86,12 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
+            <Label layoutY="-2.0" prefHeight="62.0" prefWidth="497.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="153.0" layoutY="-1.0" prefHeight="62.0" prefWidth="204.0" style="-fx-background-color: #ffffff;" text="Client-01" textFill="#00d4ff">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

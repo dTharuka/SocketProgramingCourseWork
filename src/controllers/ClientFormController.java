@@ -8,10 +8,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.*;
 import java.net.Socket;
+import java.nio.ByteBuffer;
 
 public class ClientFormController {
     static String emo1 = "";
@@ -29,6 +30,7 @@ public class ClientFormController {
     DataInputStream dataInputStream;
     DataOutputStream dataOutputStream;
     String message = "";
+    FileChooser fileChooser = new FileChooser();
 
     @FXML
     private TextArea textArea;
@@ -84,10 +86,33 @@ public class ClientFormController {
         lblMessage.setVisible(false);
     }
 
-    public void imageSendOnAction(MouseEvent mouseEvent) {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open Resource File");
-        fileChooser.showOpenDialog(new Stage());
+    public void imageSendOnAction(MouseEvent mouseEvent) throws IOException, InterruptedException {
+//        fileChooser.setTitle("Open Resource File");
+//        fileChooser.getExtensionFilters().addAll(
+//                new FileChooser.ExtensionFilter("ALL FILES", "."),
+//                new FileChooser.ExtensionFilter("ZIP", "*.zip"),
+//                new FileChooser.ExtensionFilter("PDF", "*.pdf"),
+//                new FileChooser.ExtensionFilter("TEXT", "*.txt"),
+//                new FileChooser.ExtensionFilter("IMAGE FILES", ".jpg", ".png", "*.gif")
+//        );
+//
+//        File file = fileChooser.showOpenDialog(new Stage());
+//        System.out.println(file);
+//
+//        BufferedImage image = ImageIO.read(new File(file.toString()));
+//
+//        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+//        ImageIO.write(image, "jpg", byteArrayOutputStream);
+//
+//        byte[] size = ByteBuffer.allocate(4).putInt(byteArrayOutputStream.size()).array();
+//        dataOutputStream.write(size);
+//        dataOutputStream.write(byteArrayOutputStream.toByteArray());
+//        dataOutputStream.flush();
+//        System.out.println("Flushed: " + System.currentTimeMillis());
+//
+//        Thread.sleep(120000);
+//        System.out.println("Closing: " + System.currentTimeMillis());
+//        dataOutputStream.close();
     }
 
     public void textMessage(MouseEvent mouseEvent) {

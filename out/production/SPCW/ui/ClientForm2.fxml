@@ -71,9 +71,24 @@
                </image>
             </ImageView>
             <Label layoutY="338.0" prefHeight="243.0" prefWidth="35.0" style="-fx-background-color: #ffffff;" />
-            <TextField fx:id="txtC2UN" layoutX="36.0" layoutY="391.0" prefHeight="31.0" prefWidth="418.0" promptText="User Name" />
-            <PasswordField fx:id="txtC2PW" layoutX="36.0" layoutY="444.0" prefHeight="31.0" prefWidth="418.0" promptText="password" />
-            <Button layoutX="341.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnC2LoginOnAction" prefHeight="42.0" prefWidth="113.0" text="Login" />
+            <TextField fx:id="txtC2UN" layoutX="36.0" layoutY="391.0" prefHeight="31.0" prefWidth="418.0" promptText="User Name" style="-fx-border-color: #00d4ff; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <PasswordField fx:id="txtC2PW" layoutX="36.0" layoutY="444.0" prefHeight="31.0" prefWidth="418.0" promptText="password" style="-fx-border-color: #00d4ff; -fx-background-radius: 10; -fx-border-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></PasswordField>
+            <Button layoutX="341.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnC2LoginOnAction" prefHeight="42.0" prefWidth="113.0" style="-fx-background-color: #00d4ff; -fx-background-radius: 10; -fx-border-radius: 10;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <Label layoutY="-3.0" prefHeight="63.0" prefWidth="495.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="170.0" layoutY="-3.0" prefHeight="63.0" prefWidth="156.0" style="-fx-background-color: #ffffff;" text="Client-02" textFill="#00d4ff">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>
