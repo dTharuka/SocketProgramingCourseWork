@@ -3,9 +3,11 @@ package controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -24,6 +26,10 @@ public class ServerFormController {
     public TextArea textArea;
     public TextField textMessage;
     public Label lblSmessage;
+    public AnchorPane acpSeverWindow;
+    public AnchorPane acpSeverLogin;
+    public TextField txtSUN;
+    public PasswordField txtSPW;
     Socket accept;
     ServerSocket serverSocket;
     DataInputStream dataInputStream;
@@ -166,5 +172,15 @@ public class ServerFormController {
 
     public void severTxtOnAction(MouseEvent mouseEvent) {
         lblSmessage.setVisible(false);
+    }
+
+    public void btnSLoginOnAction(ActionEvent actionEvent) {
+        if(txtSUN.getText().equals("s1") & txtSPW.getText().equals("1234")){
+            acpSeverLogin.setVisible(false);
+            acpSeverWindow.setVisible(true);
+        }else {
+            acpSeverLogin.setVisible(true);
+            acpSeverWindow.setVisible(false);
+        }
     }
 }

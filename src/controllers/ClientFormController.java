@@ -2,9 +2,7 @@ package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
@@ -22,6 +20,11 @@ public class ClientFormController {
     final int PORT = 5000;
     public AnchorPane emojiPane;
     public Label lblMessage;
+    public AnchorPane ancC1Main;
+    public TextField txtC1UN;
+    public PasswordField txtC1PW;
+    public Button btnC1LoginOnAction;
+    public AnchorPane ancC1;
     Socket accept;
     DataInputStream dataInputStream;
     DataOutputStream dataOutputStream;
@@ -107,5 +110,15 @@ public class ClientFormController {
     public void l3emoOnAction(MouseEvent mouseEvent) {
 //        emo3 = "\uD83E\uDD2A";
         textMessage.setText(textMessage.getText()+"\uD83D\uDE00");
+    }
+
+    public void btnC1LoginOnAction(ActionEvent actionEvent) {
+        if(txtC1UN.getText().equals("c1") & txtC1PW.getText().equals("1234")){
+            ancC1.setVisible(false);
+            ancC1Main.setVisible(true);
+        }else {
+            ancC1.setVisible(true);
+            ancC1Main.setVisible(false);
+        }
     }
 }

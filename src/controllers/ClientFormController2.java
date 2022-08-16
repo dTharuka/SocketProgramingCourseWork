@@ -2,6 +2,7 @@ package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -23,6 +24,10 @@ public class ClientFormController2 {
     public TextField textMessage2;
     public AnchorPane emojiPane;
     public Label lblC2Message;
+    public AnchorPane ancC2Main;
+    public AnchorPane ancC2;
+    public TextField txtC2UN;
+    public PasswordField txtC2PW;
     Socket socket2;
     DataInputStream dataInputStream2;
     DataOutputStream dataOutputStream2;
@@ -98,5 +103,15 @@ public class ClientFormController2 {
     public void textMessage(MouseEvent mouseEvent) {
         emojiPane.setVisible(false);
         lblC2Message.setVisible(false);
+    }
+
+    public void btnC2LoginOnAction(ActionEvent actionEvent) {
+        if(txtC2UN.getText().equals("c2") & txtC2PW.getText().equals("1234")){
+            ancC2.setVisible(false);
+            ancC2Main.setVisible(true);
+        }else {
+            ancC2.setVisible(true);
+            ancC2Main.setVisible(false);
+        }
     }
 }

@@ -2,6 +2,7 @@ package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -23,6 +24,10 @@ public class ClientFormController3 {
     public TextField textMessage3;
     public AnchorPane emojiPane;
     public Label lblC3Message;
+    public AnchorPane ancC3Main;
+    public AnchorPane ancC3;
+    public TextField txtC3UN;
+    public PasswordField txtC3PW;
     Socket socket3;
     DataInputStream dataInputStream3;
     DataOutputStream dataOutputStream3;
@@ -70,6 +75,7 @@ public class ClientFormController3 {
         lblC3Message.setVisible(false);
     }
 
+
     public void imageSendOnAction(MouseEvent mouseEvent) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Open Resource File");
@@ -94,5 +100,15 @@ public class ClientFormController3 {
     public void textMessage3(MouseEvent mouseEvent) {
         emojiPane.setVisible(false);
         lblC3Message.setVisible(false);
+    }
+
+    public void btnC3LoginOnAction(ActionEvent actionEvent) {
+        if(txtC3UN.getText().equals("c3") & txtC3PW.getText().equals("1234")){
+            ancC3.setVisible(false);
+            ancC3Main.setVisible(true);
+        }else {
+            ancC3.setVisible(true);
+            ancC3Main.setVisible(false);
+        }
     }
 }

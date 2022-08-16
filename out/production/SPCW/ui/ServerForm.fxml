@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="575.0" prefWidth="495.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ServerFormController">
+<AnchorPane fx:id="acpSeverWindow" prefHeight="575.0" prefWidth="495.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ServerFormController">
    <children>
       <ImageView fitHeight="379.0" fitWidth="482.0" layoutX="8.0" layoutY="91.0" pickOnBounds="true">
          <image>
@@ -33,5 +34,30 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
+      <AnchorPane fx:id="acpSeverLogin" layoutX="-1.0" layoutY="-2.0" prefHeight="581.0" prefWidth="495.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="579.0" fitWidth="495.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/1000_F_493052238_lPSRwxnw5W1WEUdmOheea7fu73CxooGm.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtSUN" layoutX="47.0" layoutY="399.0" prefHeight="31.0" prefWidth="424.0" promptText="User Name" style="-fx-border-color: #00d4ff; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtSPW" layoutX="47.0" layoutY="457.0" prefHeight="31.0" prefWidth="424.0" promptText="Password" style="-fx-border-color: #00d4ff; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="351.0" layoutY="502.0" mnemonicParsing="false" onAction="#btnSLoginOnAction" prefHeight="42.0" prefWidth="120.0" style="-fx-background-color: #00d4ff; -fx-border-radius: 10; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutY="334.0" prefHeight="246.0" prefWidth="35.0" style="-fx-background-color: #ffffff;" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

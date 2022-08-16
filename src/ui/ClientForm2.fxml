@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -9,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="575.0" prefWidth="495.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFormController2">
+<AnchorPane fx:id="ancC2Main" prefHeight="575.0" prefWidth="495.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientFormController2">
    <children>
       <ImageView fitHeight="379.0" fitWidth="482.0" layoutX="7.0" layoutY="98.0" pickOnBounds="true">
          <image>
@@ -62,5 +63,18 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
+      <AnchorPane fx:id="ancC2" layoutY="-2.0" prefHeight="581.0" prefWidth="495.0">
+         <children>
+            <ImageView fitHeight="588.0" fitWidth="495.0" layoutY="-7.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/1000_F_493052238_lPSRwxnw5W1WEUdmOheea7fu73CxooGm.png" />
+               </image>
+            </ImageView>
+            <Label layoutY="338.0" prefHeight="243.0" prefWidth="35.0" style="-fx-background-color: #ffffff;" />
+            <TextField fx:id="txtC2UN" layoutX="36.0" layoutY="391.0" prefHeight="31.0" prefWidth="418.0" promptText="User Name" />
+            <PasswordField fx:id="txtC2PW" layoutX="36.0" layoutY="444.0" prefHeight="31.0" prefWidth="418.0" promptText="password" />
+            <Button layoutX="341.0" layoutY="497.0" mnemonicParsing="false" onAction="#btnC2LoginOnAction" prefHeight="42.0" prefWidth="113.0" text="Login" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
